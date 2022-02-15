@@ -4,36 +4,37 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 2 Introduction | A Bookdown Book Template</title>
-  <meta name="description" content="A template for a bookdown book." />
-  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
+  <title>Chapter 1 Introduction | Shiny on DataLabs</title>
+  <meta name="description" content="A book about the Shiny apps on DataLabs and their EDS use cases (created using the UKCEH bookdown template)." />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 2 Introduction | A Bookdown Book Template" />
+  <meta property="og:title" content="Chapter 1 Introduction | Shiny on DataLabs" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="A template for a bookdown book." />
-  <meta name="github-repo" content="NERC-CEH/bookdown-template" />
+  <meta property="og:description" content="A book about the Shiny apps on DataLabs and their EDS use cases (created using the UKCEH bookdown template)." />
+  <meta name="github-repo" content="NERC-CEH/ShinyDataLabsBook" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 2 Introduction | A Bookdown Book Template" />
+  <meta name="twitter:title" content="Chapter 1 Introduction | Shiny on DataLabs" />
   
-  <meta name="twitter:description" content="A template for a bookdown book." />
+  <meta name="twitter:description" content="A book about the Shiny apps on DataLabs and their EDS use cases (created using the UKCEH bookdown template)." />
   
 
-<meta name="author" content="Peter Levy" />
+<meta name="author" content="Michael Tso" />
 
 
-<meta name="date" content="2020-05-13" />
+<meta name="date" content="2022-02-14" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="instructions.html"/>
-<link rel="next" href="more-stuff.html"/>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link rel="prev" href="acknowledgment.html"/>
+<link rel="next" href="apps-to-allow-improved-contextual-understanding-of-data.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,7 +50,8 @@
 
 
 
-
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
 
 <style type="text/css">
@@ -115,6 +117,7 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
@@ -128,24 +131,35 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">A Template For A Bookdown Book</a></li>
+<li><a href="./">Shiny on DataLabs</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
-<li class="chapter" data-level="1" data-path="instructions.html"><a href="instructions.html"><i class="fa fa-check"></i><b>1</b> Instructions</a></li>
-<li class="chapter" data-level="2" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>2</b> Introduction</a><ul>
-<li class="chapter" data-level="2.1" data-path="introduction.html"><a href="introduction.html#a-heading"><i class="fa fa-check"></i><b>2.1</b> A heading</a></li>
+<li class="chapter" data-level="" data-path="acknowledgment.html"><a href="acknowledgment.html"><i class="fa fa-check"></i>Acknowledgment</a></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="apps-to-allow-improved-contextual-understanding-of-data.html"><a href="apps-to-allow-improved-contextual-understanding-of-data.html"><i class="fa fa-check"></i><b>2</b> Apps to allow improved contextual understanding of data</a><ul>
+<li class="chapter" data-level="2.1" data-path="apps-to-allow-improved-contextual-understanding-of-data.html"><a href="apps-to-allow-improved-contextual-understanding-of-data.html#ecnlakes-state-tagging-app"><i class="fa fa-check"></i><b>2.1</b> ECN/Lakes state tagging app</a></li>
+<li class="chapter" data-level="2.2" data-path="apps-to-allow-improved-contextual-understanding-of-data.html"><a href="apps-to-allow-improved-contextual-understanding-of-data.html#fuzzy-changepoints-demo-app"><i class="fa fa-check"></i><b>2.2</b> Fuzzy changepoints demo app</a></li>
+<li class="chapter" data-level="2.3" data-path="apps-to-allow-improved-contextual-understanding-of-data.html"><a href="apps-to-allow-improved-contextual-understanding-of-data.html#cropnet-demo-app"><i class="fa fa-check"></i><b>2.3</b> Cropnet demo app</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="more-stuff.html"><a href="more-stuff.html"><i class="fa fa-check"></i><b>3</b> More Stuff</a><ul>
-<li class="chapter" data-level="3.1" data-path="more-stuff.html"><a href="more-stuff.html#like-this"><i class="fa fa-check"></i><b>3.1</b> Like this</a></li>
-<li class="chapter" data-level="3.2" data-path="more-stuff.html"><a href="more-stuff.html#and-this"><i class="fa fa-check"></i><b>3.2</b> And this</a></li>
+<li class="chapter" data-level="3" data-path="apps-to-improve-custom-use-of-data.html"><a href="apps-to-improve-custom-use-of-data.html"><i class="fa fa-check"></i><b>3</b> Apps to improve custom use of data</a><ul>
+<li class="chapter" data-level="3.1" data-path="apps-to-improve-custom-use-of-data.html"><a href="apps-to-improve-custom-use-of-data.html#elter-cookie-cutter-app"><i class="fa fa-check"></i><b>3.1</b> eLTER cookie-cutter app</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="even-more-things.html"><a href="even-more-things.html"><i class="fa fa-check"></i><b>4</b> Even More Things</a><ul>
-<li class="chapter" data-level="4.1" data-path="even-more-things.html"><a href="even-more-things.html#like-this-1"><i class="fa fa-check"></i><b>4.1</b> Like this</a></li>
-<li class="chapter" data-level="4.2" data-path="even-more-things.html"><a href="even-more-things.html#and-yet-this"><i class="fa fa-check"></i><b>4.2</b> And yet this</a></li>
+<li class="chapter" data-level="4" data-path="promoting-openness-using-shiny-apps.html"><a href="promoting-openness-using-shiny-apps.html"><i class="fa fa-check"></i><b>4</b> Promoting openness using Shiny apps</a><ul>
+<li class="chapter" data-level="4.1" data-path="promoting-openness-using-shiny-apps.html"><a href="promoting-openness-using-shiny-apps.html#gb-rainfall-chemistry-app"><i class="fa fa-check"></i><b>4.1</b> GB Rainfall chemistry app</a></li>
+<li class="chapter" data-level="4.2" data-path="promoting-openness-using-shiny-apps.html"><a href="promoting-openness-using-shiny-apps.html#ukwir-amr-data-explorer-app"><i class="fa fa-check"></i><b>4.2</b> UKWIR AMR data explorer app</a></li>
 </ul></li>
+<li class="chapter" data-level="5" data-path="shiny-apps-to-improve-comparison-and-visualization.html"><a href="shiny-apps-to-improve-comparison-and-visualization.html"><i class="fa fa-check"></i><b>5</b> Shiny apps to improve comparison and visualization</a><ul>
+<li class="chapter" data-level="5.1" data-path="shiny-apps-to-improve-comparison-and-visualization.html"><a href="shiny-apps-to-improve-comparison-and-visualization.html#section"><i class="fa fa-check"></i><b>5.1</b> <img src="https://bookdown.org/yihui/bookdown/images/knit-logo.png" /><!-- --><img src="https://bookdown.org/yihui/bookdown/images/knit-logo.png" /><!-- --><img src="https://bookdown.org/yihui/bookdown/images/knit-logo.png" /><!-- --></a></li>
+<li class="chapter" data-level="5.2" data-path="shiny-apps-to-improve-comparison-and-visualization.html"><a href="shiny-apps-to-improve-comparison-and-visualization.html#map-comparison-tool"><i class="fa fa-check"></i><b>5.2</b> Map comparison tool</a></li>
+<li class="chapter" data-level="5.3" data-path="shiny-apps-to-improve-comparison-and-visualization.html"><a href="shiny-apps-to-improve-comparison-and-visualization.html#pbms-demo-app"><i class="fa fa-check"></i><b>5.3</b> PBMS demo app</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="concluding-remarks.html"><a href="concluding-remarks.html"><i class="fa fa-check"></i><b>6</b> Concluding remarks</a></li>
+<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i>Appendix</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+<li><a href="https://ceh.ac.uk" target="blank">A UKCEH project.</a></li>
 
 </ul>
 
@@ -156,7 +170,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Bookdown Book Template</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Shiny on DataLabs</a>
           </h1>
         </div>
 
@@ -165,25 +179,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
             <section class="normal" id="section-">
 <div id="introduction" class="section level1">
-<h1><span class="header-section-number">Chapter 2</span> Introduction</h1>
-<p>The text of your first chapter goes here.</p>
-<div id="a-heading" class="section level2">
-<h2><span class="header-section-number">2.1</span> A heading</h2>
-<p>With sub-sections like this.</p>
-
-</div>
+<h1><span class="header-section-number">Chapter 1</span> Introduction</h1>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="instructions.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="more-stuff.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="acknowledgment.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="apps-to-allow-improved-contextual-understanding-of-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -202,6 +209,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -222,6 +230,10 @@ gitbook.start({
 "text": null
 },
 "download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }

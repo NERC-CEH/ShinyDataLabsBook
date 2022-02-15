@@ -2,6 +2,6 @@ book_filename: "bookdown-template"
 chapter_name: "Chapter "
 repo: https://github.com/NERC-CEH/ShinyDataLabsBook
 output_dir: docs
-rmd_files: ["index.Rmd", "Introduction.Rmd", "MoreStuff.Rmd", "EvenMoreStuff.Rmd"]
+rmd_files: ["index.Rmd"]
 clean: [packages.bib, bookdown.bbl]
 new_session: yes

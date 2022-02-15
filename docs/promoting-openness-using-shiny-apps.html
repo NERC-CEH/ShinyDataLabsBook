@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 4 Promoting openness using Shiny apps | Shiny on DataLabs (alpha version)</title>
+  <meta name="description" content="A book about the Shiny apps on DataLabs and their EDS use cases (created using the UKCEH bookdown template)." />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 4 Promoting openness using Shiny apps | Shiny on DataLabs (alpha version)" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="A book about the Shiny apps on DataLabs and their EDS use cases (created using the UKCEH bookdown template)." />
+  <meta name="github-repo" content="NERC-CEH/ShinyDataLabsBook" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 Promoting openness using Shiny apps | Shiny on DataLabs (alpha version)" />
+  
+  <meta name="twitter:description" content="A book about the Shiny apps on DataLabs and their EDS use cases (created using the UKCEH bookdown template)." />
+  
+
+<meta name="author" content="Michael Tso" />
+
+
+<meta name="date" content="2022-02-15" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="apps-to-improve-custom-use-of-data.html"/>
+<link rel="next" href="shiny-apps-to-improve-spatial-comparison-and-visualization.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Shiny on DataLabs (alpha)</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="" data-path="acknowledgment.html"><a href="acknowledgment.html"><i class="fa fa-check"></i>Acknowledgment</a></li>
+<li class="chapter" data-level="1" data-path="what-is-shiny.html"><a href="what-is-shiny.html"><i class="fa fa-check"></i><b>1</b> What is Shiny?</a><ul>
+<li class="chapter" data-level="1.1" data-path="what-is-shiny.html"><a href="what-is-shiny.html#the-basic-components-of-a-shiny-app"><i class="fa fa-check"></i><b>1.1</b> The basic components of a Shiny app</a></li>
+<li class="chapter" data-level="1.2" data-path="what-is-shiny.html"><a href="what-is-shiny.html#how-can-i-get-help-or-training"><i class="fa fa-check"></i><b>1.2</b> How can I get help or training?</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="apps-to-allow-improved-contextual-understanding-of-data.html"><a href="apps-to-allow-improved-contextual-understanding-of-data.html"><i class="fa fa-check"></i><b>2</b> Apps to allow improved contextual understanding of data</a><ul>
+<li class="chapter" data-level="2.1" data-path="apps-to-allow-improved-contextual-understanding-of-data.html"><a href="apps-to-allow-improved-contextual-understanding-of-data.html#ecnlakes-state-tagging-app"><i class="fa fa-check"></i><b>2.1</b> ECN/Lakes state tagging app</a></li>
+<li class="chapter" data-level="2.2" data-path="apps-to-allow-improved-contextual-understanding-of-data.html"><a href="apps-to-allow-improved-contextual-understanding-of-data.html#fuzzy-changepoints-demo-app"><i class="fa fa-check"></i><b>2.2</b> Fuzzy changepoints demo app</a></li>
+<li class="chapter" data-level="2.3" data-path="apps-to-allow-improved-contextual-understanding-of-data.html"><a href="apps-to-allow-improved-contextual-understanding-of-data.html#cropnet-demo-app"><i class="fa fa-check"></i><b>2.3</b> Cropnet demo app</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="apps-to-improve-custom-use-of-data.html"><a href="apps-to-improve-custom-use-of-data.html"><i class="fa fa-check"></i><b>3</b> Apps to improve custom use of data</a><ul>
+<li class="chapter" data-level="3.1" data-path="apps-to-improve-custom-use-of-data.html"><a href="apps-to-improve-custom-use-of-data.html#elter-cookie-cutter-app"><i class="fa fa-check"></i><b>3.1</b> eLTER cookie-cutter app</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="promoting-openness-using-shiny-apps.html"><a href="promoting-openness-using-shiny-apps.html"><i class="fa fa-check"></i><b>4</b> Promoting openness using Shiny apps</a><ul>
+<li class="chapter" data-level="4.1" data-path="promoting-openness-using-shiny-apps.html"><a href="promoting-openness-using-shiny-apps.html#gb-rainfall-chemistry-app"><i class="fa fa-check"></i><b>4.1</b> GB Rainfall chemistry app</a></li>
+<li class="chapter" data-level="4.2" data-path="promoting-openness-using-shiny-apps.html"><a href="promoting-openness-using-shiny-apps.html#ukwir-amr-data-explorer-app"><i class="fa fa-check"></i><b>4.2</b> UKWIR AMR data explorer app</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="shiny-apps-to-improve-spatial-comparison-and-visualization.html"><a href="shiny-apps-to-improve-spatial-comparison-and-visualization.html"><i class="fa fa-check"></i><b>5</b> Shiny apps to improve spatial comparison and visualization</a><ul>
+<li class="chapter" data-level="5.1" data-path="shiny-apps-to-improve-spatial-comparison-and-visualization.html"><a href="shiny-apps-to-improve-spatial-comparison-and-visualization.html#map-comparison-tool"><i class="fa fa-check"></i><b>5.1</b> Map comparison tool</a></li>
+<li class="chapter" data-level="5.2" data-path="shiny-apps-to-improve-spatial-comparison-and-visualization.html"><a href="shiny-apps-to-improve-spatial-comparison-and-visualization.html#pbms-demo-app"><i class="fa fa-check"></i><b>5.2</b> PBMS demo app</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="concluding-remarks.html"><a href="concluding-remarks.html"><i class="fa fa-check"></i><b>6</b> Concluding remarks</a></li>
+<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i>Appendix</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+<li><a href="https://ceh.ac.uk" target="blank">A UKCEH project.</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Shiny on DataLabs (alpha version)</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="promoting-openness-using-shiny-apps" class="section level1">
+<h1><span class="header-section-number">Chapter 4</span> Promoting openness using Shiny apps</h1>
+<p align="center" style="font-weight: bold;color:orange">
+For Demonstration purposes only. Under development.
+</p>
+<div id="gb-rainfall-chemistry-app" class="section level2">
+<h2><span class="header-section-number">4.1</span> GB Rainfall chemistry app</h2>
+<p><a href="https://cptecn-sandboxdemo.datalabs.ceh.ac.uk/" class="uri">https://cptecn-sandboxdemo.datalabs.ceh.ac.uk/</a></p>
+<p>While notebook technology provides powerful way for users to reproduce entire analyses, sometimes it may be helpful for users to experiment with some changes in small sections of a code in an isolated manner. One option is to turn a R Markdown document to a learnr (<span class="citation">Aden-Buie, Schloerke, and Allaire (<a href="#ref-learnr" role="doc-biblioref">2022</a>)</span>) document by specifying a few extra options so that the rendered notebook has executable ‘sandboxes’ for users to edit and re-run code chunks in real-time.Here the apporach is demonstrated on the outputs of a recent paper <span class="citation">(C.-H. M. Tso et al. <a href="#ref-Tso2022" role="doc-biblioref">2022</a>)</span>. This approach is further documented in <span class="citation">C. M. Tso et al. (<a href="#ref-Tso2022RJ" role="doc-biblioref">2022</a>)</span>.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-5"></span>
+<img src="img/learnr.png" alt="A screenshot of the GB rainfall interactive notebook site. The main feature is the code box. When the site loads, the code that generates the published version of the figure is in the box and the published version of the figure is below it. Users can make edits and re-run the code in the code box and the figure will update accordingly. Users can use the “Start Over” button to see the published version of the code at any point without refreshing the entire site." width="640" />
+<p class="caption">
+Figure 4.1: A screenshot of the GB rainfall interactive notebook site. The main feature is the code box. When the site loads, the code that generates the published version of the figure is in the box and the published version of the figure is below it. Users can make edits and re-run the code in the code box and the figure will update accordingly. Users can use the “Start Over” button to see the published version of the code at any point without refreshing the entire site.
+</p>
+</div>
+</div>
+<div id="ukwir-amr-data-explorer-app" class="section level2">
+<h2><span class="header-section-number">4.2</span> UKWIR AMR data explorer app</h2>
+<p><a href="https://ukwir-testing.datalabs.ceh.ac.uk/" class="uri">https://ukwir-testing.datalabs.ceh.ac.uk/</a></p>
+<p>In some projects, a large number of measurements are taken and many plots would be generated if all results are plotted in a report. This app allows users to plot and filter the results.</p>
+<p>The user may want to reproduce to plots in the app in their own R session. Using the Shinymeta R package [shinymeta], the user can simply import the underlying dataset, copy the code snippet from the ‘Show code’ box in the app, and reproduce the plot in their own R session.</p>
+<p><img src="img/UKWIR.PNG" width="628" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-learnr">
+<p>Aden-Buie, Garrick, Barret Schloerke, and JJ Allaire. 2022. <em>Learnr: Interactive Tutorials for R</em>.</p>
+</div>
+<div id="ref-Tso2022RJ">
+<p>Tso, Chak‐Hau Michael, Michael Hollaway, Rebecca Killick, Peter Henrys, Don Monteith, John Watkins, and Gordon S. Blair. 2022. “Advancing reproducible research by publishing R markdown notebooks as interactive sandboxes using the ‘learnr’ package.” <em>The R Journal</em>.</p>
+</div>
+<div id="ref-Tso2022">
+<p>Tso, Chak-Hau Michael, Don Monteith, Tony Scott, Helen Watson, Beverley Dodd, M. Glória Pereira, Peter Henrys, et al. 2022. “The Evolving Role of Weather Types on Rainfall Chemistry Under Large Reductions in Pollutant Emissions.” <em>Environmental Pollution</em> 299 (April): 118905. <a href="https://doi.org/10.1016/j.envpol.2022.118905">https://doi.org/10.1016/j.envpol.2022.118905</a>.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="apps-to-improve-custom-use-of-data.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="shiny-apps-to-improve-spatial-comparison-and-visualization.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

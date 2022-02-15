@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 Apps to allow improved contextual understanding of data | Shiny on DataLabs (alpha version)</title>
+  <meta name="description" content="A book about the Shiny apps on DataLabs and their EDS use cases (created using the UKCEH bookdown template)." />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 Apps to allow improved contextual understanding of data | Shiny on DataLabs (alpha version)" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="A book about the Shiny apps on DataLabs and their EDS use cases (created using the UKCEH bookdown template)." />
+  <meta name="github-repo" content="NERC-CEH/ShinyDataLabsBook" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 Apps to allow improved contextual understanding of data | Shiny on DataLabs (alpha version)" />
+  
+  <meta name="twitter:description" content="A book about the Shiny apps on DataLabs and their EDS use cases (created using the UKCEH bookdown template)." />
+  
+
+<meta name="author" content="Michael Tso" />
+
+
+<meta name="date" content="2022-02-15" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="what-is-shiny.html"/>
+<link rel="next" href="apps-to-improve-custom-use-of-data.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Shiny on DataLabs (alpha)</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="" data-path="acknowledgment.html"><a href="acknowledgment.html"><i class="fa fa-check"></i>Acknowledgment</a></li>
+<li class="chapter" data-level="1" data-path="what-is-shiny.html"><a href="what-is-shiny.html"><i class="fa fa-check"></i><b>1</b> What is Shiny?</a><ul>
+<li class="chapter" data-level="1.1" data-path="what-is-shiny.html"><a href="what-is-shiny.html#the-basic-components-of-a-shiny-app"><i class="fa fa-check"></i><b>1.1</b> The basic components of a Shiny app</a></li>
+<li class="chapter" data-level="1.2" data-path="what-is-shiny.html"><a href="what-is-shiny.html#how-can-i-get-help-or-training"><i class="fa fa-check"></i><b>1.2</b> How can I get help or training?</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="apps-to-allow-improved-contextual-understanding-of-data.html"><a href="apps-to-allow-improved-contextual-understanding-of-data.html"><i class="fa fa-check"></i><b>2</b> Apps to allow improved contextual understanding of data</a><ul>
+<li class="chapter" data-level="2.1" data-path="apps-to-allow-improved-contextual-understanding-of-data.html"><a href="apps-to-allow-improved-contextual-understanding-of-data.html#ecnlakes-state-tagging-app"><i class="fa fa-check"></i><b>2.1</b> ECN/Lakes state tagging app</a></li>
+<li class="chapter" data-level="2.2" data-path="apps-to-allow-improved-contextual-understanding-of-data.html"><a href="apps-to-allow-improved-contextual-understanding-of-data.html#fuzzy-changepoints-demo-app"><i class="fa fa-check"></i><b>2.2</b> Fuzzy changepoints demo app</a></li>
+<li class="chapter" data-level="2.3" data-path="apps-to-allow-improved-contextual-understanding-of-data.html"><a href="apps-to-allow-improved-contextual-understanding-of-data.html#cropnet-demo-app"><i class="fa fa-check"></i><b>2.3</b> Cropnet demo app</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="apps-to-improve-custom-use-of-data.html"><a href="apps-to-improve-custom-use-of-data.html"><i class="fa fa-check"></i><b>3</b> Apps to improve custom use of data</a><ul>
+<li class="chapter" data-level="3.1" data-path="apps-to-improve-custom-use-of-data.html"><a href="apps-to-improve-custom-use-of-data.html#elter-cookie-cutter-app"><i class="fa fa-check"></i><b>3.1</b> eLTER cookie-cutter app</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="promoting-openness-using-shiny-apps.html"><a href="promoting-openness-using-shiny-apps.html"><i class="fa fa-check"></i><b>4</b> Promoting openness using Shiny apps</a><ul>
+<li class="chapter" data-level="4.1" data-path="promoting-openness-using-shiny-apps.html"><a href="promoting-openness-using-shiny-apps.html#gb-rainfall-chemistry-app"><i class="fa fa-check"></i><b>4.1</b> GB Rainfall chemistry app</a></li>
+<li class="chapter" data-level="4.2" data-path="promoting-openness-using-shiny-apps.html"><a href="promoting-openness-using-shiny-apps.html#ukwir-amr-data-explorer-app"><i class="fa fa-check"></i><b>4.2</b> UKWIR AMR data explorer app</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="shiny-apps-to-improve-spatial-comparison-and-visualization.html"><a href="shiny-apps-to-improve-spatial-comparison-and-visualization.html"><i class="fa fa-check"></i><b>5</b> Shiny apps to improve spatial comparison and visualization</a><ul>
+<li class="chapter" data-level="5.1" data-path="shiny-apps-to-improve-spatial-comparison-and-visualization.html"><a href="shiny-apps-to-improve-spatial-comparison-and-visualization.html#map-comparison-tool"><i class="fa fa-check"></i><b>5.1</b> Map comparison tool</a></li>
+<li class="chapter" data-level="5.2" data-path="shiny-apps-to-improve-spatial-comparison-and-visualization.html"><a href="shiny-apps-to-improve-spatial-comparison-and-visualization.html#pbms-demo-app"><i class="fa fa-check"></i><b>5.2</b> PBMS demo app</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="concluding-remarks.html"><a href="concluding-remarks.html"><i class="fa fa-check"></i><b>6</b> Concluding remarks</a></li>
+<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i>Appendix</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+<li><a href="https://ceh.ac.uk" target="blank">A UKCEH project.</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Shiny on DataLabs (alpha version)</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="apps-to-allow-improved-contextual-understanding-of-data" class="section level1">
+<h1><span class="header-section-number">Chapter 2</span> Apps to allow improved contextual understanding of data</h1>
+<p align="center" style="font-weight: bold;color:orange">
+For Demonstration purposes only. Under development.
+</p>
+<p>Data science methods provides new ways to analyze and understand environmental science data. Shiny apps can be a powerful way to showcase a methodological method with some real-world environmental science examples.</p>
+<div id="ecnlakes-state-tagging-app" class="section level2">
+<h2><span class="header-section-number">2.1</span> ECN/Lakes state tagging app</h2>
+<p>In this example, <span class="citation">Tso et al. (<a href="#ref-Tso2020" role="doc-biblioref">2020</a>)</span> proposed a state tagging method to improved environmetnal data quality assurance. Contextual data (e.g. weather variables) are used to classify the state of the system arbitrarily. The user can then look at the inter- and intra-class variability of their observed variables. This method provides a step change to conventional range checks on envrionmental data.</p>
+<p>In addition to two apps that demonstrates the method with ECN moth and Cumbrian Lakes chemistry data, a generic version of the app is also created to allow users to upload the same method to create the same analysis.</p>
+<ul>
+<li><a href="https://statetag-ecnmoth.datalabs.ceh.ac.uk/" class="uri">https://statetag-ecnmoth.datalabs.ceh.ac.uk/</a></li>
+<li><a href="https://statetag-lakes.datalabs.ceh.ac.uk/" class="uri">https://statetag-lakes.datalabs.ceh.ac.uk/</a></li>
+<li><a href="https://statetag-generic.datalabs.ceh.ac.uk/" class="uri">https://statetag-generic.datalabs.ceh.ac.uk/</a></li>
+</ul>
+<p><img src="img/statetagging1.png" width="281" style="display: block; margin: auto;" /></p>
+</div>
+<div id="fuzzy-changepoints-demo-app" class="section level2">
+<h2><span class="header-section-number">2.2</span> Fuzzy changepoints demo app</h2>
+<p>Changepoints analysis is a method to detect sudden change in statistical properties in a time series. However, when comparing the changepoints from two time series, it may not be straightfoward due to due different frequencies and underlying generation process. <span class="citation">Hollaway et al. (<a href="#ref-Hollaway2021" role="doc-biblioref">2021</a>)</span> proposed a method to assess the agreement of changepoints detected in observe and simulated data using a fuzzy logic framwork, and demonstrated the method with a Shiny app.</p>
+<p><a href="https://dsne-fuzzycpteval.datalabs.ceh.ac.uk/" class="uri">https://dsne-fuzzycpteval.datalabs.ceh.ac.uk/</a></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-4"></span>
+<img src="img/fuzzy.jpg" alt="A figure illustrating the fuzzy changepoints concept." width="379" />
+<p class="caption">
+Figure 2.1: A figure illustrating the fuzzy changepoints concept.
+</p>
+</div>
+</div>
+<div id="cropnet-demo-app" class="section level2">
+<h2><span class="header-section-number">2.3</span> Cropnet demo app</h2>
+<p><a href="https://cropnet-demonstrator.datalabs.ceh.ac.uk/" class="uri">https://cropnet-demonstrator.datalabs.ceh.ac.uk/</a></p>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-Hollaway2021">
+<p>Hollaway, M. J., P. A. Henrys, R. Killick, A. Leeson, and J. Watkins. 2021. “Evaluating the Ability of Numerical Models to Capture Important Shifts in Environmental Time Series: A Fuzzy Change Point Approach.” <em>Environmental Modelling &amp; Software</em> 139 (May): 104993. <a href="https://doi.org/10.1016/j.envsoft.2021.104993">https://doi.org/10.1016/j.envsoft.2021.104993</a>.</p>
+</div>
+<div id="ref-Tso2020">
+<p>Tso, Chak-Hau Michael, Peter Henrys, Susannah Rennie, and John Watkins. 2020. “State Tagging for Improved Earth and Environmental Data Quality Assurance.” <em>Frontiers in Environmental Science</em> 8 (May). <a href="https://doi.org/10.3389/fenvs.2020.00046">https://doi.org/10.3389/fenvs.2020.00046</a>.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="what-is-shiny.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="apps-to-improve-custom-use-of-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

@@ -4,27 +4,27 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>A Bookdown Book Template</title>
-  <meta name="description" content="A template for a bookdown book." />
-  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
+  <title>Shiny on DataLabs (alpha version)</title>
+  <meta name="description" content="A book about the Shiny apps on DataLabs and their EDS use cases (created using the UKCEH bookdown template)." />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="A Bookdown Book Template" />
+  <meta property="og:title" content="Shiny on DataLabs (alpha version)" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="A template for a bookdown book." />
-  <meta name="github-repo" content="NERC-CEH/bookdown-template" />
+  <meta property="og:description" content="A book about the Shiny apps on DataLabs and their EDS use cases (created using the UKCEH bookdown template)." />
+  <meta name="github-repo" content="NERC-CEH/ShinyDataLabsBook" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="A Bookdown Book Template" />
+  <meta name="twitter:title" content="Shiny on DataLabs (alpha version)" />
   
-  <meta name="twitter:description" content="A template for a bookdown book." />
+  <meta name="twitter:description" content="A book about the Shiny apps on DataLabs and their EDS use cases (created using the UKCEH bookdown template)." />
   
 
-<meta name="author" content="Peter Levy" />
+<meta name="author" content="Michael Tso" />
 
 
-<meta name="date" content="2020-05-13" />
+<meta name="date" content="2022-02-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,8 +32,9 @@
   
   
 
-<link rel="next" href="instructions.html"/>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link rel="next" href="acknowledgment.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,71 +50,11 @@
 
 
 
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
 
 
-<style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -128,24 +69,37 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">A Template For A Bookdown Book</a></li>
+<li><a href="./">Shiny on DataLabs (alpha)</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
-<li class="chapter" data-level="1" data-path="instructions.html"><a href="instructions.html"><i class="fa fa-check"></i><b>1</b> Instructions</a></li>
-<li class="chapter" data-level="2" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>2</b> Introduction</a><ul>
-<li class="chapter" data-level="2.1" data-path="introduction.html"><a href="introduction.html#a-heading"><i class="fa fa-check"></i><b>2.1</b> A heading</a></li>
+<li class="chapter" data-level="" data-path="acknowledgment.html"><a href="acknowledgment.html"><i class="fa fa-check"></i>Acknowledgment</a></li>
+<li class="chapter" data-level="1" data-path="what-is-shiny.html"><a href="what-is-shiny.html"><i class="fa fa-check"></i><b>1</b> What is Shiny?</a><ul>
+<li class="chapter" data-level="1.1" data-path="what-is-shiny.html"><a href="what-is-shiny.html#the-basic-components-of-a-shiny-app"><i class="fa fa-check"></i><b>1.1</b> The basic components of a Shiny app</a></li>
+<li class="chapter" data-level="1.2" data-path="what-is-shiny.html"><a href="what-is-shiny.html#how-can-i-get-help-or-training"><i class="fa fa-check"></i><b>1.2</b> How can I get help or training?</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="more-stuff.html"><a href="more-stuff.html"><i class="fa fa-check"></i><b>3</b> More Stuff</a><ul>
-<li class="chapter" data-level="3.1" data-path="more-stuff.html"><a href="more-stuff.html#like-this"><i class="fa fa-check"></i><b>3.1</b> Like this</a></li>
-<li class="chapter" data-level="3.2" data-path="more-stuff.html"><a href="more-stuff.html#and-this"><i class="fa fa-check"></i><b>3.2</b> And this</a></li>
+<li class="chapter" data-level="2" data-path="apps-to-allow-improved-contextual-understanding-of-data.html"><a href="apps-to-allow-improved-contextual-understanding-of-data.html"><i class="fa fa-check"></i><b>2</b> Apps to allow improved contextual understanding of data</a><ul>
+<li class="chapter" data-level="2.1" data-path="apps-to-allow-improved-contextual-understanding-of-data.html"><a href="apps-to-allow-improved-contextual-understanding-of-data.html#ecnlakes-state-tagging-app"><i class="fa fa-check"></i><b>2.1</b> ECN/Lakes state tagging app</a></li>
+<li class="chapter" data-level="2.2" data-path="apps-to-allow-improved-contextual-understanding-of-data.html"><a href="apps-to-allow-improved-contextual-understanding-of-data.html#fuzzy-changepoints-demo-app"><i class="fa fa-check"></i><b>2.2</b> Fuzzy changepoints demo app</a></li>
+<li class="chapter" data-level="2.3" data-path="apps-to-allow-improved-contextual-understanding-of-data.html"><a href="apps-to-allow-improved-contextual-understanding-of-data.html#cropnet-demo-app"><i class="fa fa-check"></i><b>2.3</b> Cropnet demo app</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="even-more-things.html"><a href="even-more-things.html"><i class="fa fa-check"></i><b>4</b> Even More Things</a><ul>
-<li class="chapter" data-level="4.1" data-path="even-more-things.html"><a href="even-more-things.html#like-this-1"><i class="fa fa-check"></i><b>4.1</b> Like this</a></li>
-<li class="chapter" data-level="4.2" data-path="even-more-things.html"><a href="even-more-things.html#and-yet-this"><i class="fa fa-check"></i><b>4.2</b> And yet this</a></li>
+<li class="chapter" data-level="3" data-path="apps-to-improve-custom-use-of-data.html"><a href="apps-to-improve-custom-use-of-data.html"><i class="fa fa-check"></i><b>3</b> Apps to improve custom use of data</a><ul>
+<li class="chapter" data-level="3.1" data-path="apps-to-improve-custom-use-of-data.html"><a href="apps-to-improve-custom-use-of-data.html#elter-cookie-cutter-app"><i class="fa fa-check"></i><b>3.1</b> eLTER cookie-cutter app</a></li>
 </ul></li>
+<li class="chapter" data-level="4" data-path="promoting-openness-using-shiny-apps.html"><a href="promoting-openness-using-shiny-apps.html"><i class="fa fa-check"></i><b>4</b> Promoting openness using Shiny apps</a><ul>
+<li class="chapter" data-level="4.1" data-path="promoting-openness-using-shiny-apps.html"><a href="promoting-openness-using-shiny-apps.html#gb-rainfall-chemistry-app"><i class="fa fa-check"></i><b>4.1</b> GB Rainfall chemistry app</a></li>
+<li class="chapter" data-level="4.2" data-path="promoting-openness-using-shiny-apps.html"><a href="promoting-openness-using-shiny-apps.html#ukwir-amr-data-explorer-app"><i class="fa fa-check"></i><b>4.2</b> UKWIR AMR data explorer app</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="shiny-apps-to-improve-spatial-comparison-and-visualization.html"><a href="shiny-apps-to-improve-spatial-comparison-and-visualization.html"><i class="fa fa-check"></i><b>5</b> Shiny apps to improve spatial comparison and visualization</a><ul>
+<li class="chapter" data-level="5.1" data-path="shiny-apps-to-improve-spatial-comparison-and-visualization.html"><a href="shiny-apps-to-improve-spatial-comparison-and-visualization.html#map-comparison-tool"><i class="fa fa-check"></i><b>5.1</b> Map comparison tool</a></li>
+<li class="chapter" data-level="5.2" data-path="shiny-apps-to-improve-spatial-comparison-and-visualization.html"><a href="shiny-apps-to-improve-spatial-comparison-and-visualization.html#pbms-demo-app"><i class="fa fa-check"></i><b>5.2</b> PBMS demo app</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="concluding-remarks.html"><a href="concluding-remarks.html"><i class="fa fa-check"></i><b>6</b> Concluding remarks</a></li>
+<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i>Appendix</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+<li><a href="https://ceh.ac.uk" target="blank">A UKCEH project.</a></li>
 
 </ul>
 
@@ -156,7 +110,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Bookdown Book Template</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Shiny on DataLabs (alpha version)</a>
           </h1>
         </div>
 
@@ -165,13 +119,29 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
             <section class="normal" id="section-">
 <div id="header">
-<h1 class="title">A Bookdown Book Template</h1>
-<p class="author"><em>Peter Levy</em></p>
-<p class="date"><em>2020-05-13</em></p>
+<h1 class="title">Shiny on DataLabs (alpha version)</h1>
+<p class="author"><em>Michael Tso</em></p>
+<p class="date"><em>2022-02-15</em></p>
 </div>
 <div id="preface" class="section level1 unnumbered">
 <h1>Preface</h1>
-<p>This is the preface to the book.</p>
+<p align="center" style="font-weight: bold;color:orange">
+For Demonstration purposes only. Under development.
+</p>
+<p>A web app is application software that runs on a web server. It provides interactivity for users to explore its content and can provide live updating of the information displayed. However, building web apps would often require specialist knowledge in web development. Web development frameworks such as <em>Shiny</em> <span class="citation">(Chang et al. <a href="#ref-shiny" role="doc-biblioref">2021</a>)</span> provides an easy way for scientists to build prototype web apps with the R language only. This means scientists can rapidly build these web apps themselves to engage their sceintific outputs with users.</p>
+<p>The NERC DataLabs project (<a href="https://datalabs.datalabs.ceh.ac.uk" class="uri">https://datalabs.datalabs.ceh.ac.uk</a>) is a cloud-based cyberinfrastructure to allow environmental scientists to collaborate and share outputs more seamlessly. It includes powerful data store and notebooks environments and easy tools to publish Shiny apps.</p>
+<p>This <strong>live</strong> book provides an entry point for users to discover the various use cases of Shiny web apps to advance envrionmental data science in DataLabs. It is <strong>live</strong> because it is dynamic and DataLabs users are welcome to add content to it. It also demonstrates to stakeholders the capabilities and added value UKCEH and the wider research community can offer to deliver projects via the use of Shiny apps.</p>
+<p>Although each of the example apps discussed here have their specific use cases, where possible it also includes code snippets or a generic/minimal version of the app so that it can be readily transferable to other projects and applications.</p>
+<p><img src="img/UK_SCAPE_Logo_Positive_WithStrap.png" width="354" style="display: block; margin: auto;" /></p>
+<hr />
+<p>All of the content of this repository is licensed
+<a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.This <a href="https://bookdown.org/yihui/bookdown/">bookdown</a> book is created using the template created by Pete Levy.</p>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-shiny">
+<p>Chang, Winston, Joe Cheng, JJ Allaire, Carson Sievert, Barret Schloerke, Yihui Xie, Jeff Allen, Jonathan McPherson, Alan Dipert, and Barbara Borges. 2021. <em>Shiny: Web Application Framework for R</em>. <a href="https://CRAN.R-project.org/package=shiny">https://CRAN.R-project.org/package=shiny</a>.</p>
+</div>
 </div>
             </section>
 
@@ -179,11 +149,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
         </div>
       </div>
 
-<a href="instructions.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="acknowledgment.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -202,6 +171,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -222,6 +192,10 @@ gitbook.start({
 "text": null
 },
 "download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }
