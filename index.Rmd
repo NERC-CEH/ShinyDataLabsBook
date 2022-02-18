@@ -219,9 +219,29 @@ A more extended list of UKCEH Shiny apps is included in the appendix.
 Note that the source code of the many apps discussed are also deposited on GitHub and EIDC, e.g.:
 
 - Fuzzy changepoint (https://doi.org/10.5285/49d04d55-90a7-4106-b8fe-2e75aba228e4)
+- Generic state tagging (https://doi.org/10.5285/1de712d3-081e-4b44-b880-b6a1ebf9fcd8)
 
 UKCEH also host a number of Shiny sites under the https://shiny-apps.ceh.ac.uk/ domain. Here are some of the apps hosted there:
 
 - [What's flying tonight](https://shiny-apps.ceh.ac.uk/whats_flying_tonight/)
+- [LiNCAGES - Size](https://shiny-apps.ceh.ac.uk/LiNCAGES/)
+- [Find your niche: plant species model assessment](https://shiny-apps.ceh.ac.uk/find_your_niche/)
+- [UK Reconstructed Flow Data Explorer](https://shiny-apps.ceh.ac.uk/reconstruction_explorer/)
+- [Citizen science landscape](https://shiny-apps.ceh.ac.uk/citizen_science_landscape/)
+- [Lake Thermal Regions](https://shiny-apps.ceh.ac.uk/LakeThermalRegions/)
+- [Pollution Removal by Vegetation](https://shiny-apps.ceh.ac.uk/pollutionremoval/)
+- [Species Occupancy Plot Viewer](https://shiny-apps.ceh.ac.uk/speciesplotviewer/)
+- [Butterflies Near Me](https://shiny-apps.ceh.ac.uk/butterflies_near_me/)
+- [UK Hydrological Drought Explorer](https://shiny-apps.ceh.ac.uk/hydro_drought_explorer/)
+- [Plant diversity and occurrence over 40 years - Size](https://shiny-apps.ceh.ac.uk/common_plant_change/)
+- [British carabid habitat association.](https://shiny-apps.ceh.ac.uk/CarabidData/)
+- [Targeting Revisits Map: Craneflies](https://shiny-apps.ceh.ac.uk/targeting_revisits_craneflies/)
+- [Targeting Revisits Map: Ground Beetles](https://shiny-apps.ceh.ac.uk/targeting_revisits_ground_beetles/)
+- [Targeting Revisits Map: Soldierflies](https://shiny-apps.ceh.ac.uk/targeting_revisits_soldierflies/)
+- [PREAR Future Rotations Explorer](https://shiny-apps.ceh.ac.uk/prear-future-rotations-explorer/)
+- [ID-TaxER](https://shiny-apps.ceh.ac.uk/ID-TaxER/)
+- [NRFA Trends Explorer](https://shiny-apps.ceh.ac.uk/river-flow-trends-explorer/)
+- [UK APIENs](https://shiny-apps.ceh.ac.uk/APIS/)
+- []()
 
 `r if (knitr::is_html_output()) '# References {-}'`
