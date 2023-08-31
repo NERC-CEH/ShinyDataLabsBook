@@ -245,3 +245,10 @@ UKCEH also host a number of Shiny sites under the https://shiny-apps.ceh.ac.uk/ 
 - []()
 
 `r if (knitr::is_html_output()) '# References {-}'`
+
+# Appendix 2: Shiny troubleshoot {-}
+
+## Leaflet
+
+## Download button
+- [Zip and download all plots](https://stackoverflow.com/questions/62055419/how-to-download-multiple-plots-as-a-zip-file-in-r-shiny)
